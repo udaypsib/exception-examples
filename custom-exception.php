@@ -1,4 +1,5 @@
 <?php
+include("set-exception-handler.php");
 
 $custom = isset($argv[1])? $argv[1]: 5;
 $rope = isset($argv[2])? $argv[2]: 155;
@@ -7,6 +8,9 @@ $waterLevel = isset($argv[3])? $argv[3]: 8;
 echo "\n\n----------------------] SCRIPT START [--------------------\n";
 
 try {
+    if (!is_numeric($custom) || !is_numeric($waterLevel) || !is_numeric($rope)) {
+        throw new InvalidArgumentException('Arguments must be numeric.');
+    }
 
     checkCustom($custom);
 

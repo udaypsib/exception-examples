@@ -1,4 +1,4 @@
-# PHP Exception example codes
+# PHP Exception example scripts
 
 This sample scripts have been prepared for explaining the usage of Exception in PHP. All the samples should be executed in console for clearity.
 
@@ -54,7 +54,7 @@ $custom is ok
 
 `$ php custom-exception.php 4 132 11`
 
-Outpu: 
+Output: 
 ```
 
 
