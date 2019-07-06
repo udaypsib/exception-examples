@@ -194,3 +194,22 @@ File: /Users/sendinblue-uday/SendInBlue/Projects/Training-sessions/session-8-jul
 Line: 11
 
 ```
+
+### 8. system-error-handled.php
+
+Sample example of file not found system error.
+
+`$ php system-error-handled.php`
+
+Output:
+```
+
+Caught: File error.log was not found.
+Code: 404
+File: /Users/sendinblue-uday/SendInBlue/Projects/Training-sessions/session-8-jul-2019/exception-examples/system-error-handled.php
+
+To handle this exception, file can be created or the mission can be aborted in controlled way.
+
+=======] Finally block: if file was opened, close it here. [==========
+
+```
