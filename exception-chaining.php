@@ -1,6 +1,13 @@
 <?php
+require('set-exception-handler.php');
 
-$input = isset($argv[1])? (int) $argv[1]: 9;
+$input = isset($argv[1])? $argv[1]: 9;
+
+if (!is_numeric($input)) {
+    throw new \InvalidArgumentException('Expecting numeric input only.');
+}
+
+$input = (int) $input;
 
 try {
     try {
@@ -12,7 +19,7 @@ try {
             } catch(LengthException $e) {
                 throw new InvalidArgumentException("Length should be >= 5\n\n", 102, $e);
             } catch(LogicException $e) {
-                echo 'Handelled: ' . $e->getMessage() . "\n";
+                echo 'Logical Exception: ' . $e->getMessage() . "\n";
             }
         } catch (InvalidArgumentException $e) {
             throw new UnexpectedValueException("This value is not expected.\n\n", 103, $e);;
@@ -41,7 +48,7 @@ function someLogic($i)
     }
 
     if ($i === 5) {
-        throw new LogicException('This is not correct', 101);
+        throw new LogicException('This is not expected', 101);
     }
 
     echo "======[ Normal flow ends ]=====\n\n";
