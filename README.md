@@ -7,7 +7,7 @@ Note: We assume that PHP is install in Cli-environment.
 
 ## Usage
 
-### 1. custom-exception.php
+### * custom-exception.php
 This is sample script to define custom exceptions and its usage in code. See below the possible variation of outputs
 
 `$ php custom-exception.php`
@@ -60,7 +60,7 @@ Rope length is ok
 ```
 
 
-### 1. argument-count-error.php
+### * argument-count-error.php
 An example of catching PHP's argument count exception
 
 `php argument-count-error.php`
@@ -73,7 +73,7 @@ Output:
 ```
 
 
-### 1. exception-chaining.php
+### * exception-chaining.php
 Explains the usage of chaining the exception objects as per the thrown hirarchy
 
 `$ php exception-chaining.php`
@@ -119,7 +119,7 @@ Output:
 
 ```
 
-### 1. multiple-catch.php
+### * multiple-catch.php
 Catching multiple example.
 
 `$ php multiple-catch.php`
