@@ -1,7 +1,5 @@
 <?php
 
-include("set-exception-handler.php");
-
 function myTest($x):int {
     return $x;
 }

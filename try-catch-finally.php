@@ -1,6 +1,8 @@
 <?php
 require('set-exception-handler.php');
+
 $i = isset($argv[1])? (int) $argv[1]: 19;
+
 function someLogic()
 {
     if ($i < 10) {
